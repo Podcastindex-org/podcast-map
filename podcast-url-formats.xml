@@ -1,89 +1,90 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!-- Thes regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others agains a few hundreds. -->
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!-- Thes regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others against a few hundreds. -->
 <!-- Author: Christopher Isene<christopher.isene@gmail.com> -->
+<!-- Revision: 2020-08-17 14:58:40 -->
 <rulesets>
 
-  <ruleset name="Anchor.fm">
+  <ruleset name="Anchor.fm" sort="fm.anchor">
     <matching>^http(s)?\x3a\x2f\x2fanchor\x2efm\x2fs\x2f([0-9a-f]{1,})\x2fpodcast\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="Spreaker">
+  <ruleset name="Spreaker" sort="com.spreaker">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2espreaker\x2ecom\x2fshow\x2f(\d{1,})\x2fepisodes\x2ffeed$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2espreaker\x2ecom\x2fuser\x2f(\d{1,})\x2fepisodes\x2ffeed$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2espreaker\x2ecom\x2fihr\x2fshow\x2f(\d{1,})\x2fepisodes\x2ffeed\x2dpassthrough$</matching>
   </ruleset>
 
-  <ruleset name="Ivoox">
+  <ruleset name="Ivoox" sort="com.ivoox">
     <matching>^http(s)?\x3a\x2f\x2f([a-z]{1,})\x2eivoox\x2ecom\x2f(([a-z]{1,})\x2f)?([a-z0-9\x2d\x5f]{1,})\x5ff\d{1,}\x5ffiltro\x5f1\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="SoundCloud">
+  <ruleset name="SoundCloud" sort="com.soundcloud">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2esoundcloud\x2ecom\x2fusers\x2fsoundcloud\x3ausers\x3a(\d{1,})\x2fsounds\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="LibSyn">
+  <ruleset name="LibSyn" sort="com.libsyn">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2elibsyn\x2ecom\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="PodBean">
+  <ruleset name="PodBean" sort="com.podbean">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2epodbean\x2ecom\x2ffeed\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2epodbean\x2ecom\x2ffeed\x2f$</matching>
   </ruleset>
 
-  <ruleset name="BuzzSprout.com">
+  <ruleset name="BuzzSprout.com" sort="com.buzzsprout">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ebuzzsprout\x2ecom\x2f(\d{1,})\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="LibriVox.org">
+  <ruleset name="LibriVox.org" sort="org.librivox">
     <matching>^http(s)?\x3a\x2f\x2flibrivox\x2eorg\x2frss\x2f(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="FeedBurner.com">
+  <ruleset name="FeedBurner.com" sort="com.feedburner">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2efeedburner\x2ecom\x2f([a-z0-9\x2f\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="PromoDJ.com">
+  <ruleset name="PromoDJ.com" sort="com.promodj">
     <matching>^http(s)?\x3a\x2f\x2fpromodj\x2ecom\x2f([a-z0-9\x2d\x2e]{1,})\x2f([a-z0-9\x2d\x2e]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="LoyalBooks.com">
+  <ruleset name="LoyalBooks.com" sort="com.loyalbooks">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eloyalbooks\x2ecom\x2fbook\x2f([a-z0-9\x25\x2d\x5f]{1,})\x2ffeed$</matching>
   </ruleset>
 
-  <ruleset name="AudioBoom.com">
+  <ruleset name="AudioBoom.com" sort="com.audioboom">
     <matching>^http(s)?\x3a\x2f\x2faudioboom\x2ecom\x2fchannels\x2f(\d{1,})\x2erss$</matching>
     <matching>^http(s)?\x3a\x2f\x2faudioboom\x2ecom\x2fchannel\x2f([a-z0-9\x2e\x2d\x5f]{1,})\x2erss$</matching>
     <matching>^http(s)?\x3a\x2f\x2faudioboom\x2ecom\x2fplaylists\x2f([a-z0-9\x2e\x2d]{1,})\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="SimpleCast.com">
+  <ruleset name="SimpleCast.com" sort="com.simplecast">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2esimplecast\x2ecom\x2f([a-z0-9\x5f]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2f(rss\x2e)?simplecast\x2ecom\x2fpodcasts\x2f(\d{1,})\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="PodOmatic.com">
+  <ruleset name="PodOmatic.com" sort="com.podomatic">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x5f]{1,})\x2epodomatic\x2ecom\x2f(rss2|archive)\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="ACast.com">
+  <ruleset name="ACast.com" sort="com.acast">
     <matching>^http(s)?\x3a\x2f\x2faccess\x2eacast\x2ecom\x2frss\x2f([a-z0-9]{1,})\x2fdefault$</matching>
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2eacast\x2ecom\x2fpublic\x2fshows\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2frss\x2eacast\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="OmnyContent.com">
+  <ruleset name="OmnyContent.com" sort="com.omnycontent">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eomnycontent\x2ecom\x2fd\x2fplaylist\x2f([a-f0-9\x2d]{36})\x2f([a-f0-9\x2d]{36})\x2f([a-f0-9\x2d]{36})\x2fpodcast\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="Hakawati.fm">
+  <ruleset name="Hakawati.fm" sort="fm.hakawati">
     <matching>^http(s)?\x3a\x2f\x2fhakawati\x2efm\x2fchannels\x2frss\x2f(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="Whooshkaa.com">
+  <ruleset name="Whooshkaa.com" sort="com.whooshkaa">
     <matching>^http(s)?\x3a\x2f\x2frss\x2ewhooshkaa\x2ecom\x2frss\x2fpodcast\x2fid\x2f(\d{1,})(\x2f)?$</matching>
   </ruleset>
 
-  <ruleset name="MegaPhone.fm">
+  <ruleset name="MegaPhone.fm" sort="fm.megaphone">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2emegaphone\x2efm\x2f([a-z0-9\x2d]{1,})(\x2f)?$</matching>
     <removes>
       <remove>\x3flimit\x3d\d{1,}</remove>
@@ -94,78 +95,78 @@
     </removes>
   </ruleset>
 
-  <ruleset name="RadioFrance-Podcast.net">
+  <ruleset name="RadioFrance-Podcast.net" sort="net.radiofrance-podcast">
     <matching>^http(s)?\x3a\x2f\x2fradiofrance\x2dpodcast\x2enet\x2fpodcast(\d{1,})\x2frss\x5f(\d{1,})\x2exml$</matching>
     <removes>
       <remove>\x3fformat\x3dxml</remove>
     </removes>
   </ruleset>
 
-  <ruleset name="Podigee.io">
+  <ruleset name="Podigee.io" sort="io.podigee">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2epodigee\x2eio\x2ffeed\x2f([a-z0-9]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="SquareSpace.com">
+  <ruleset name="SquareSpace.com" sort="com.squarespace">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2esquarespace\x2ecom\x2f([a-z0-9\x2d\x2f]{1,})?\x3fformat\x3drss$</matching>
     <removes>
       <remove>\x3fcategory\x3d([a-z0-9\x25]{1,})</remove>
     </removes>
   </ruleset>
 
-  <ruleset name="RDL.de">
+  <ruleset name="RDL.de" sort="de.rdl">
     <matching>^http(s)?\x3a\x2f\x2frdl\x2ede\x2fpodcast\x2f(\d{1,})\x2fall$</matching>
   </ruleset>
 
-  <ruleset name="Transistor.fm">
+  <ruleset name="Transistor.fm" sort="fm.transistor">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2etransistor\x2efm\x2f([a-z0-9\x2d]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="SermonAudio.com">
+  <ruleset name="SermonAudio.com" sort="com.sermonaudio">
     <matching>^http(s)?\x3a\x2f\x2f(www|rss)\x2esermonaudio\x2ecom\x2frss\x5f(source|search|special)\x2e(asp|rss)\x3f(sourceid|type|filter|seriesonly|speakeronly|keyword|langonly|eventonly)\x3d</matching>
   </ruleset>
 
-  <ruleset name="Art19.com">
+  <ruleset name="Art19.com" sort="com.art19">
     <matching>^http(s)?\x3a\x2f\x2frss\x2eart19\x2ecom\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="Blubrry.com">
+  <ruleset name="Blubrry.com" sort="com.blubrry">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x5f]{1,})\x2eblubrry\x2ecom\x2ffeed\x2fpodcast(\x2f)?$</matching>
     <matching>^http(s)?\x3a\x2f\x2fmedia\x2eblubrry\x2ecom\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})(\x3fformat\x3drss)?$</matching>
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2eblubrry\x2ecom\x2ffeeds\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Podcaster.de">
+  <ruleset name="Podcaster.de" sort="de.podcaster">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2epodcaster\x2ede\x2f([a-z0-9\x2d\x5f]{1,})\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="SubSplash.com">
+  <ruleset name="SubSplash.com" sort="com.subsplash">
     <matching>^http(s)?\x3a\x2f\x2fpodcasts\x2esubsplash\x2ecom\x2f([a-z0-9]{1,})\x2fpodcast\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="Iono.fm">
+  <ruleset name="Iono.fm" sort="fm.iono">
     <matching>^http(s)?\x3a\x2f\x2fiono\x2efm\x2frss\x2fchan\x2f(\d{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fiono\x2efm\x2frss\x2ffeed\x2f([a-z0-9]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fiono\x2efm\x2frss\x2fprov\x2f([0-9]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="Lizhi.fm">
+  <ruleset name="Lizhi.fm" sort="fm.lizhi">
     <matching>^http(s)?\x3a\x2f\x2frss\x2elizhi\x2efm\x2frss\x2f(\d{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="BlogtalkRadio.com">
+  <ruleset name="BlogtalkRadio.com" sort="com.blogtalkradio">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eblogtalkradio\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2fpodcast$</matching>
   </ruleset>
 
-  <ruleset name="FireSide.fm">
+  <ruleset name="FireSide.fm" sort="fm.fireside">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2efireside\x2efm\x2frss$</matching>
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2efireside\x2efm\x2f([a-z0-9\x2d]{1,})\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="Sermon.net">
+  <ruleset name="Sermon.net" sort="net.sermon">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2esermon\x2enet\x2frss(\x2f)?([a-z0-9\x2d\x2f\x5f]{1,})?$</matching>
   </ruleset>
 
-  <ruleset name="NPR.org">
+  <ruleset name="NPR.org" sort="org.npr">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2enpr\x2eorg\x2f(\d{1,})\x2fpodcast\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2enpr\x2eorg\x2frss\x2fpodcast\x2ephp\x3fid\x3d(\d{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2enpr\x2eorg\x2frss\x2fpodlayer\x2ephp\x3fid\x3d(\d{1,})$</matching>
@@ -175,7 +176,7 @@
     </removes>
   </ruleset>
 
-  <ruleset name="Echo.Msk.Ru">
+  <ruleset name="Echo.Msk.Ru" sort="ru.msk">
     <matching>^http(s)?\x3a\x2f\x2fecho\x2emsk\x2eru\x2fcontributors\x2f(\d{1,})\x2frss\x2daudio\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fecho\x2emsk\x2eru\x2fcontributors\x2f([a-z\x2d]{1,})\x2frss\x2daudio\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fecho\x2emsk\x2eru\x2fguests\x2f(\d{1,})\x2frss\x2daudio\x2exml$</matching>
@@ -183,55 +184,55 @@
     <matching>^http(s)?\x3a\x2f\x2fecho\x2emsk\x2eru\x2fprograms\x2f([a-z0-9\x2d\x5f]{1,})\x2frss\x2daudio\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Podster.fm">
+  <ruleset name="Podster.fm" sort="fm.podster">
     <matching>^http(s)?\x3a\x2f\x2fpodster\x2efm\x2frss\x2exml\x3fpid\x3d(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="PodcastOne.com">
+  <ruleset name="PodcastOne.com" sort="com.podcastone">
     <matching>^http(s)?\x3a\x2f\x2forigin\x2epodcastone\x2ecom\x2fpodcast\x3fcategoryID2\x3d(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="Captivate.fm">
+  <ruleset name="Captivate.fm" sort="fm.captivate">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ecaptivate\x2efm\x2f([a-z0-9\x2d\x5f]{1,})\x2f$</matching>
   </ruleset>
 
-  <ruleset name="Messy.fm">
+  <ruleset name="Messy.fm" sort="fm.messy">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2emessy\x2efm\x2fapi\x2fshow\x2f(\d{1,})\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="RTVE.es">
+  <ruleset name="RTVE.es" sort="es.rtve">
     <matching>^http(s)?\x3a\x2f\x2fapi\x2ertve\x2ees\x2fapi\x2fprogramas\x2f(\d{1,})\x2f(audios|multimedias)\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="ShoutEngine.com">
+  <ruleset name="ShoutEngine.com" sort="com.shoutengine">
     <matching>^http(s)?\x3a\x2f\x2fshoutengine\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="CastBox.fm">
+  <ruleset name="CastBox.fm" sort="fm.castbox">
     <matching>^http(s)?\x3a\x2f\x2frss\x2ecastbox\x2efm\x2feverest\x2f([a-f0-9]{32})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="FeedPreess.me">
+  <ruleset name="FeedPreess.me" sort="me.feedpress">
     <matching>^http(s)?\x3a\x2f\x2ffeedpress\x2eme\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="LibsynPro.com">
+  <ruleset name="LibsynPro.com" sort="com.libsynpro">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2elibsynpro\x2ecom\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="BBCi.co.uk">
+  <ruleset name="BBCi.co.uk" sort="uk.co.bbci">
     <matching>^http(s)?\x3a\x2f\x2fpodcasts\x2efiles\x2ebbci\x2eco\x2euk\x2f([a-z0-9]{8})\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="Podcasts.com">
+  <ruleset name="Podcasts.com" sort="com.podcasts">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2epodcasts\x2ecom\x2frss\x5ffeed\x2f([a-f0-9]{32})$</matching>
   </ruleset>
 
-  <ruleset name="PodcastMirror.com">
+  <ruleset name="PodcastMirror.com" sort="com.podcastmirror">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2epodcastmirror\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="NDR.de">
+  <ruleset name="NDR.de" sort="de.ndr">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2endr\x2ede\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2fpodcast(\d{1,})\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2endr\x2ede\x2fpodcast\x2f([a-z0-9]{1,})\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2endr\x2ede\x2fpodcastlink\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
@@ -239,14 +240,14 @@
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9]{1,})\x2endr\x2ede\x2f([a-z0-9]{1,})\x2fpodcast\x2f([a-z0-9]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Blubrry.net">
+  <ruleset name="Blubrry.net" sort="net.blubrry">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2eblubrry\x2enet\x2ffeed\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2eblubrry\x2enet\x2fcategory\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed([a-z0-9\x2d\x2f]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2eblubrry\x2enet\x2f\x3ffeed\x3d([a-z]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2eblubrry\x2enet\x2ffeed\x2f$</matching>
   </ruleset>
 
-  <ruleset name="RFI.fr">
+  <ruleset name="RFI.fr" sort="fr.rfi">
     <matching>^http(s)?\x3a\x2f\x2fbr\x2erfi\x2efr\x2fprogramas\x2f([a-z0-9\x2d]{1,})\x2fpodcast(\x2f)?$</matching>
     <matching>^http(s)?\x3a\x2f\x2fcn\x2erfi\x2efr\x2f([a-f0-9\x25]{1,})\x2f([a-f0-9\x25]{1,})\x2fpodcast(\x2f)?$</matching>
     <matching>^http(s)?\x3a\x2f\x2fen\x2erfi\x2efr\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x2f]{1,})\x2fpodcast(\x2f)?$</matching>
@@ -271,112 +272,112 @@
     <matching>^http(s)?\x3a\x2f\x2fwww1\x2erfi\x2efr\x2fradiofr\x2fpodcast\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Hearthis.at">
+  <ruleset name="Hearthis.at" sort="at.hearthis">
     <matching>^http(s)?\x3a\x2f\x2fhearthis\x2eat\x2f([a-z0-9\x2d\x2e\x5f]{1,})\x2fpodcast\x2f$</matching>
     <matching>^http(s)?\x3a\x2f\x2fhearthis\x2eat\x2fset\x2f([a-z0-9\x2d]{1,})\x2fpodcast\x2f(rss\x2f)?$</matching>
   </ruleset>
 
-  <ruleset name="Seesaa.net">
+  <ruleset name="Seesaa.net" sort="net.seesaa">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2eseesaa\x2enet\x2f([a-z0-9\x2d\x5f]{1,})\x2erdf$</matching>
   </ruleset>
 
-  <ruleset name="Ausha.co">
+  <ruleset name="Ausha.co" sort="co.ausha">
     <matching>^http(s)?\x3a\x2f\x2ffeed\x2eausha\x2eco\x2f([a-z0-9]{12})$</matching>
   </ruleset>
 
-  <ruleset name="PodCache.net">
+  <ruleset name="PodCache.net" sort="net.podcache">
     <matching>^http(s)?\x3a\x2f\x2fapi\x2epodcache\x2enet\x2fshows\x2f([a-f0-9\x2d]{36})\x2ffeed$</matching>
     <matching>^http(s)?\x3a\x2f\x2fstaging\x2dapi\x2epodcache\x2enet\x2fshows\x2f([a-f0-9\x2d]{36})\x2ffeed$</matching>
   </ruleset>
 
-  <ruleset name="Prisasd.com">
+  <ruleset name="Prisasd.com" sort="com.prisasd">
     <matching>^http(s)?\x3a\x2f\x2ffapi\x2dtop\x2eprisasd\x2ecom\x2fpodcast\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})(\x2exml)?$</matching>
   </ruleset>
 
-  <ruleset name="PodPoint.com">
+  <ruleset name="PodPoint.com" sort="com.podpoint">
     <matching>^http(s)?\x3a\x2f\x2fpodpoint\x2ecom\x2ffeed\x2f(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="WordPress.com">
+  <ruleset name="WordPress.com" sort="com.wordpress">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ewordpress\x2ecom\x2f([a-z0-9\x25\x2d\x2f\x5f]{1,})?feed\x2f$</matching>
   </ruleset>
 
-  <ruleset name="RTI.org.tw">
+  <ruleset name="RTI.org.tw" sort="tw.org.rti">
     <matching>^http(s)?\x3a\x2f\x2f([a-z\x2d]{1,})\x2erti\x2eorg\x2etw\x2fradio\x2fpodcast\x2fid\x2f(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="RSS.com">
+  <ruleset name="RSS.com" sort="com.rss">
     <matching>^http(s)?\x3a\x2f\x2fmedia\x2erss\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="SR.se">
+  <ruleset name="SR.se" sort="se.sr">
     <matching>^http(s)?\x3a\x2f\x2fapi(\x2estage)?\x2esr\x2ese\x2fapi\x2frss\x2fpod\x2f(\d{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fapi(\x2estage)?\x2esr\x2ese\x2fapi\x2frss\x2fpod\x2fitunes\x2f(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="VoiceAmerica.com">
+  <ruleset name="VoiceAmerica.com" sort="com.voiceamerica">
     <matchinga>^http(s)?\x3a\x2f\x2fwww\x2evoiceamerica\x2ecom\x2frss\x2fshow\x2f(\d{1,})$</matchinga>
     <matchinga>^http(s)?\x3a\x2f\x2fwww\x2evoiceamerica\x2ecom\x2frss\x2f(\d{1,})$</matchinga>
   </ruleset>
 
-  <ruleset name="BulkStorage.ca">
+  <ruleset name="BulkStorage.ca" sort="ca.bulkstorage">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ebulkstorage\x2eca\x2fv1\x2fAUTH\x5f([a-f0-9]{32})\x2f(\d{1,})\x2ffeeds\x2f([a-z0-9]{1,})\x2exml\x3f((\x26)?temp\x5furl\x5fsig\x3d([a-f0-9]{40}))?((\x26)?temp\x5furl\x5fexpires\x3d(\d{1,}))?((\x26)?temp\x5furl\x5fsig\x3d([a-f0-9]{40}))?(\x26inline)?$</matching>
   </ruleset>
 
-  <ruleset name="PodPlayStudio.com">
+  <ruleset name="PodPlayStudio.com" sort="com.podplaystudio">
     <matching>^http(s)?\x3a\x2f\x2frss\x2epodplaystudio\x2ecom\x2f(\d{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="PublicBroadcasting.net">
+  <ruleset name="PublicBroadcasting.net" sort="net.publicbroadcasting">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9]{1,})\x2edrupal\x2epublicbroadcasting\x2enet\x2fpodcasts\x2f(\d{1,})\x2frss\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9]{1,})\x2edrupal\x2epublicbroadcasting\x2enet\x2fpodcasts\x2fterm\x2f(\d{1,})\x2frss\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9]{1,})\x2edrupal\x2epublicbroadcasting\x2enet\x2fpodcasts$</matching>
   </ruleset>
 
-  <ruleset name="LePodcast.fr">
+  <ruleset name="LePodcast.fr" sort="fr.lepodcast">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2elepodcast\x2efr\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="GloboRadio">
+  <ruleset name="GloboRadio" sort="com.globoradio">
     <matching>^http(s)?\x3a\x2f\x2faudio\x2egloboradio\x2eglobo\x2ecom\x2fpodcast\x2ffeed\x2f(\d{1,})\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="PodcastMachine.com">
+  <ruleset name="PodcastMachine.com" sort="com.podcastmachine">
     <matching>^http(s)?\x3a\x2f\x2ffeed\x2epodcastmachine\x2ecom\x2fpodcasts\x2f(\d{1,})\x2fmp3\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="AccessRadio.org">
+  <ruleset name="AccessRadio.org" sort="org.accessradio">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eaccessradio\x2eorg\x2frss\x2eashx\x3fp\x3d([a-z0-9\x2d]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eaccessradio\x2eorg\x2frss\x2eashx\x3fpid\x3d([a-f0-9\x2d]{36})$</matching>
   </ruleset>
 
-  <ruleset name="FuturiMedia.com">
+  <ruleset name="FuturiMedia.com" sort="com.futurimedia">
     <matching>^http(s)?\x3a\x2f\x2fpost\x2efuturimedia\x2ecom\x2f([a-z0-9]{1,})\x2fplaylist\x2frss\x2f(\d{1,})\x2exml(\x3fshow\x5fdeleted\x3d(true|false))?$</matching>
     <matching>^http(s)?\x3a\x2f\x2fpost\x2efuturimedia\x2ecom\x2f([a-z0-9]{1,})\x2fplaylist\x2frss\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="SRF.ch">
+  <ruleset name="SRF.ch" sort="ch.srf">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2esrf\x2ech\x2ffeed\x2fpodcast\x2f(sd|hd)\x2f([a-f0-9\x2d]{36})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="YLE.fi">
+  <ruleset name="YLE.fi" sort="fi.yle">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2eyle\x2efi\x2fareena\x2fv(\d{1,})\x2fseries\x2f([0-9\x2d]{1,})\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="NPO.nl">
+  <ruleset name="NPO.nl" sort="nl.npo">
     <matching>^http(s)?\x3a\x2f\x2fpodcast\x2enpo\x2enl\x2ffeed\x2f([a-z0-9\x2d]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="DR.dk">
+  <ruleset name="DR.dk" sort="dk.dr">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2edr\x2edk\x2fmu\x2ffeed\x2f([a-z0-9\x2d]{1,})\x2exml\x3fformat\x3dpodcast$</matching>
   </ruleset>
 
-  <ruleset name="CISM893.ca">
+  <ruleset name="CISM893.ca" sort="ca.cism893">
     <matching>^http(s)?\x3a\x2f\x2fpodcast\x2ecism893\x2eca\x2fradioshows\x2f(\d{1,})\x2ffeed\x5fitunes\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fpodcast\x2ecism893\x2eca\x2fradioshow\x2ffeed\x5fitunes\x2f(\d{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Rozhlas.cz">
+  <ruleset name="Rozhlas.cz" sort="cz.rozhlas">
     <matching>^http(s)?\x3a\x2f\x2fapi\x2erozhlas\x2ecz\x2fdata\x2fv(\d{1,})\x2fpodcast\x2fshow\x2f(\d{1,})\x2erss$</matching>
     <matching>^http(s)?\x3a\x2f\x2fapi\x2erozhlas\x2ecz\x2fdata\x2fv(\d{1,})\x2fpodcast\x2fstation\x2f([a-z0-9\x2d]{1,})\x2erss$</matching>
     <matching>^http(s)?\x3a\x2f\x2fdata\x2erozhlas\x2ecz\x2fapi\x2fv(\d{1,})\x2ffeed\x2faudiolog\x2f([a-z0-9\x2d]{1,})\x2erss$</matching>
@@ -386,33 +387,33 @@
     <matching>^http(s)?\x3a\x2f\x2fstatic\x2erozhlas\x2ecz\x2fnews(\x2fplus)?\x2f([a-z0-9\x2d\x5f]{1,})\x2erss$</matching>
   </ruleset>
 
-  <ruleset name="FaithLife.com">
+  <ruleset name="FaithLife.com" sort="com.faithlife">
     <matching>^http(s)?\x3a\x2f\x2fsermons\x2efaithlife\x2ecom\x2fapi\x2fchannels\x2f(\d{1,})\x2ffeed$</matching>
   </ruleset>
 
-  <ruleset name="ERR.ee">
+  <ruleset name="ERR.ee" sort="ee.err">
     <matching>^http(s)?\x3a\x2f\x2fservices\x2eerr\x2eee\x2fpodcast\x2fseries\x2f([a-z0-9\x2b\x2d\x5f]{1,})\x2exml$</matching>
     <matchong>^http(s)?\x3a\x2f\x2fservices\x2eerr\x2eee\x2fpodcast\x2fapp\x2f([a-z0-9\x2b\x2d\x5f]{1,})\x2exml$</matchong>
   </ruleset>
 
-  <ruleset name="ReachMD.com">
+  <ruleset name="ReachMD.com" sort="com.reachmd">
     <matching>^http(s)?\x3a\x2f\x2freachmd\x2ecom\x2frss\x2f(itunes|playerfm)\x2f(\d{1,})\x2f$</matching>
   </ruleset>
 
-  <ruleset name="CastOs.com">
+  <ruleset name="CastOs.com" sort="com.castos">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ecastos\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="HubHopper.com">
+  <ruleset name="HubHopper.com" sort="com.hubhopper">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ehubhopper\x2ecom\x2fpodcast\x2f([a-z0-9\x2d]{1,})\x2f(\d{1,})(\x3feps\x3dall)?$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ehubhopper\x2ecom\x2f([a-f0-9]{32})\x2erss(\x3f(eps\x3dall|v\x3d(\d{1,})))?$</matching>
   </ruleset>
 
-  <ruleset name="Podiant.co">
+  <ruleset name="Podiant.co" sort="co.podiant">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2epodiant\x2eco\x2f([a-z0-9\x2d]{1,})\x2frss\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="WDR.de">
+  <ruleset name="WDR.de" sort="de.wdr">
     <matching>^http(s)?\x3a\x2f\x2fkinder\x2ewdr\x2ede\x2fradio\x2f([a-z0-9\x2d]{1,})\x2f(audio|hoeren)\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d]{1,})\x2epodcast$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww(\d{1,})?\x2ewdr\x2ede\x2fmediathek\x2faudio\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2epodcast$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww(\d{1,})?\x2ewdr\x2ede\x2fmediathek\x2faudio\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2epodcast$</matching>
@@ -421,40 +422,40 @@
     <matching>^http(s)?\x3a\x2f\x2fwww(\d{1,})?\x2ewdr\x2ede\x2fsport\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2epodcast$</matching>
   </ruleset>
 
-  <ruleset name="RTP.pt">
+  <ruleset name="RTP.pt" sort="pt.rtp">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2ertp\x2ept\x2fplay\x2fpodcast\x2f(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="ABC.net.au">
+  <ruleset name="ABC.net.au" sort="au.net.abc">
     <matching>^http(s)?\x3a\x2f\x2f(www\x2e)?abc\x2enet\x2eau\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d\x2f]{1,})\x2fpodcast\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Podstacja.com">
+  <ruleset name="Podstacja.com" sort="com.podstacja">
     <matching>^http(s)?\x3a\x2f\x2fpodstacja\x2ecom\x2fxml\x2fkanal\x2f(\d{1,})\x2f([a-z0-9\x2d]{1,})\x2f$</matching>
   </ruleset>
 
-  <ruleset name="NRJAudio.fm">
+  <ruleset name="NRJAudio.fm" sort="fm.nrjaudio">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9]{1,}\x2e)?nrjaudio\x2efm\x2fxml\x2f(\d{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="PodSpot.de">
+  <ruleset name="PodSpot.de" sort="de.podspot">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2epodspot\x2ede\x2frss(\x2b(all|usm))?$</matching>
   </ruleset>
 
-  <ruleset name="CCMA.cat">
+  <ruleset name="CCMA.cat" sort="cat.ccma">
     <matching>^http(s)?\x3a\x2f\x2fdinamics\x2eccma\x2ecat\x2fpublic\x2fpodcast\x2fcatradio\x2fxml\x2f([a-z0-9\x2d]{1,})\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fdinamics\x2eccma\x2ecat\x2fpublic\x2fpodcast\x2fcatradio\x2fxml\x2f(\d)\x2f(\d)\x2f([a-z0-9]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="HipCast.com">
+  <ruleset name="HipCast.com" sort="com.hipcast">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ehipcast\x2ecom\x2frss\x2f([a-z0-9\x25\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="OnePlace.com">
+  <ruleset name="OnePlace.com" sort="com.oneplace">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eoneplace\x2ecom\x2fministries\x2f([a-z0-9\x2d]{1,})\x2fsubscribe\x2fpodcast\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="PodTrac.com">
+  <ruleset name="PodTrac.com" sort="com.podtrac">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2epodtrac\x2ecom\x2f([a-z0-9\x24\x2d\x5f]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2epodtrac\x2ecom\x2f([a-z0-9\x24\x2d\x5f]{1,})\x2f$</matching>
     <matching>^http(s)?\x3a\x2f\x2fdts\x2epodtrac\x2ecom\x2fredirect\x2emp3\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})$</matching>
@@ -462,113 +463,217 @@
     <matching>^http(s)?\x3a\x2f\x2fpodtrac\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x3f([a-z0-9\x2d\x2e\x2f\x3a]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="TalkShoe.com">
+  <ruleset name="TalkShoe.com" sort="com.talkshoe">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2etalkshoe\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="BR.de">
+  <ruleset name="BR.de" sort="de.br">
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ebr\x2ede\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Granicus.com">
+  <ruleset name="Granicus.com" sort="com.granicus">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2egranicus\x2ecom\x2fpodcast\x2ephp\x3fview\x5fid\x3d(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="Pod.space">
+  <ruleset name="Pod.space" sort="space.pod">
     <matching>^http(s)?\x3a\x2f\x2ffeed\x2epod\x2espace\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="QC.ca">
+  <ruleset name="QC.ca" sort="ca.qc">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2eqc\x2eca\x2fradioshow\x2ffeed\x5fitunes\x2f(\d{1,})\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2eqc\x2eca\x2fradioshows\x2f(\d{1,})\x2ffeed\x5fitunes\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2eqc\x2eca\x2ffeed\x2fpodcast(\x2f)?$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2eqc\x2eca\x2f([a-z0-9\x2d\x5f]{1,})\x5frss\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="RTL.fr">
+  <ruleset name="RTL.fr" sort="fr.rtl">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2ertl\x2efr\x2fpodcast\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="ORF.at">
+  <ruleset name="ORF.at" sort="at.orf">
     <matching>^http(s)?\x3a\x2f\x2f(files(\d{1,})?|static)\x2eorf\x2eat\x2f([a-z0-9]{1,})\x2f([a-z0-9]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="RTS.ch">
+  <ruleset name="RTS.ch" sort="ch.rts">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2erts\x2ech\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d]{1,})\x2fpodcast\x2f\x3fflux\x3drss$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2erts\x2ech\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d\x2f]{1,})\x2f\x3fflux\x3drss$</matching>
   </ruleset>
 
-  <ruleset name="RTVSLO.si">
+  <ruleset name="RTVSLO.si" sort="si.rtvslo">
     <matching>^http(s)?\x3a\x2f\x2fpodcast\x2ertvslo\x2esi\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="SpokenLayer.com">
+  <ruleset name="SpokenLayer.com" sort="com.spokenlayer">
     <matching>^http(s)?\x3a\x2f\x2fapi\x2espokenlayer\x2ecom\x2ffeed\x2fchannel\x2f([a-z0-9\x2d]{1,})\x2f([a-f0-9]{64})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fapi\x2espokenlayer\x2ecom\x2fv(\d{1,})\x2ffeed\x2fchannel\x2f([a-z0-9\x2d]{1,})\x2f([a-f0-9]{64})$</matching>
   </ruleset>
 
-  <ruleset name="ZenCast.fm">
+  <ruleset name="ZenCast.fm" sort="fm.zencast">
     <matching>^http(s)?\x3a\x2f\x2fmedia\x2ezencast\x2efm\x2f([a-z0-9\x2d\x5f]{1,})\x2frss$</matching>
   </ruleset>
 
-  <ruleset name="ESPN.com">
+  <ruleset name="ESPN.com" sort="com.espn">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eespn\x2ecom\x2fespnradio\x2fpodcast\x2ffeeds\x2fitunes\x2fpodcast\x3fid\x3d(\d{1,})$</matching>
   </ruleset>
 
-  <ruleset name="Pod.co">
+  <ruleset name="Pod.co" sort="co.pod">
     <matching>^http(s)?\x3a\x2f\x2ffeed\x2epod\x2eco\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2fpod\x2eco\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Cast.rocks">
+  <ruleset name="Cast.rocks" sort="rocks.cast">
     <matching>^http(s)?\x3a\x2f\x2fcast\x2erocks\x2fhosting\x2f(\d{1,})\x2ffeeds\x2f([a-z0-9]{1,})\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2ecast\x2erocks\x2ffeed\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Fro.at">
+  <ruleset name="Fro.at" sort="at.fro">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2efro\x2eat\x2fseries\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2efro\x2eat\x2fstation\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2efro\x2eat\x2ftag\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed$</matching>
   </ruleset>
 
-  <ruleset name="Europe1.fr">
+  <ruleset name="Europe1.fr" sort="fr.europe1">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eeurope1\x2efr\x2frss\x2fpodcasts\x2f([a-z0-9\x2d]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="KBOO.fm">
+  <ruleset name="KBOO.fm" sort="fm.kboo">
     <matching>^http(s)?\x3a\x2f\x2fkboo\x2efm\x2fprogram\x2f([a-z0-9\x2d]{1,})\x2fpodcast$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2ekboo\x2efm\x2fprogram\x2f([a-z0-9\x2d]{1,})\x2fpodcast$</matching>
   </ruleset>
 
-  <ruleset name="RadioPopolare.it">
+  <ruleset name="RadioPopolare.it" sort="it.radiopopolare">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eradiopopolare\x2eit\x2fpoplive\x2fonair\x2fpodcast\x5frpondemand\x5f([a-z0-9]{1,})\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Podetize.com">
+  <ruleset name="Podetize.com" sort="com.podetize">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2epodetize\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2f$</matching>
   </ruleset>
 
-  <ruleset name="OndaCero.es">
+  <ruleset name="OndaCero.es" sort="es.ondacero">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eondacero\x2ees\x2frss\x2fpodcast\x2f(\d{1,})\x2fpodcast\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eondacero\x2ees\x2frss\x2f(\d{1,})\x2exml$</matching>
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eondacero\x2ees\x2fpodcast\x5frss\x2f(\d{1,})(\x2dradioshow)?\x2exml$</matching>
   </ruleset>
 
-  <ruleset name="Cam.Ac.uk">
-    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2ecam\x2eac\x2euk\x2frss\x2fcollection\x2f(\d{1,})$</ruleset>
+  <ruleset name="Cam.Ac.uk" sort="uk.ac.cam">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2ecam\x2eac\x2euk\x2frss\x2fcollection\x2f(\d{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2ecam\x2eac\x2euk\x2frss\x2fmedia\x2f(\d{1,})$</matching>
-  </matching>
+  </ruleset>
 
-  <ruleset name="JW.org">
+  <ruleset name="JW.org" sort="org.jw">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2ejw\x2eorg\x2f([a-z0-9\»2d]{1,})\x5frssmediamag\x3frln\x3d([a-z]{1,3})\x26rmn\x3d([a-z]{1,2})\x26rfm\x3dmp3([a-z0-9\x26\x3d]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="HerokuApp.com">
+  <ruleset name="HerokuApp.com" sort="com.herokuapp">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})\x2eherokuapp\x2ecom\x2f([a-z0-9\x2d\x2f\x2e]{1,})$</matching>
   </ruleset>
 
-  <ruleset name="CBC.ca">
+  <ruleset name="CBC.ca" sort="ca.cbc">
     <matching>^http(s)?\x3a\x2f\x2fwww\x2ecbc\x2eca\x2fpodcasting\x2fincludes\x2f([a-z0-9]{1,})\x2exml$</matching>
   </ruleset>
+
+  <ruleset name="CEU.edu" sort="edu.ceu">
+    <matching>^https\x3a\x2f\x2fpodcasts\x2eceu\x2eedu\x2ftaxonomy\x2fterm\x2f(\d{1,})\x2ffeed$</matching>
+  </ruleset>
+
+  <ruleset name="AncientFaith.com" sort="com.ancientfaith">
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2eancientfaith\x2ecom\x2f([a-z0-9\x2d\x2e\x5f]{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2eancientfaith\x2ecom\x2ffeeds\x2fspecials\x2f([a-z0-9\x2d\x2e\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Sounder.FM" sort="fm.sounder">
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2esounder\x2efm\x2f(\d{1,})\x2frss\x2exml$</matching>
+  </ruleset>
+
+
+  <ruleset name="PineCast.com" sort="com.pinecast">
+    <matching>^http(s)?\x3a\x2f\x2fpinecast\x2ecom\x2ffeed\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Apple iTunes" sort="com.apple">
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2eapple\x2ecom\x2fpodcasts\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fpcr\x2eapple\x2ecom\x2fid(\d{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fitunesu\x2eitunes\x2eapple\x2ecom\x2ffeed\x2fid(\d{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fapplehosted\x2epodcasts\x2eapple\x2ecom\x2f([a-z0-9\x25\x2d\x2e\x2f\x5f]{1,})\x2exml$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fitstreaming\x2eapple\x2ecom\x2fpodcasts\x2f([a-z0-9\x25\x2d\x2e\x2f\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="RedCircle.com" sort="com.redcircle">
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2eredcircle\x2ecom\x2f([a-f0-9\x2d]{36})$</matching>
+  </ruleset>
+
+  <ruleset name="FirStory.FM" sort="me.firstory">
+    <matching>^http(s)?\x3a\x2f\x2fopen\x2efirstory\x2eme\x2frss\x2fuser\x2f([a-z0-9]{25})$</matching>
+  </ruleset>
+
+  <ruleset name="Breaker.Audio" sort="audio.breaker">
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2ebreaker\x2eaudio\x2ffeeds\x2f(\d{1,})\x2erss$</matching>
+  </ruleset>
+
+  <ruleset name="IslamHouse.com" sort="com.islamhouse">
+    <matching>^http(s)?\x3a\x2f\x2fislamhouse\x2ecom\x2fpc\x2f(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="HuffDuffer.com" sort="com.huffduffer">
+    <matching>^http(s)?\x3a\x2f\x2fhuffduffer\x2ecom\x2f([a-z0-9\x2d]{1,})\x2frss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fhuffduffer\x2ecom\x2f([a-z0-9\x2d]{1,})\x2fcollective\x2frss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fhuffduffer\x2ecom\x2f([a-z0-9\x2d]{1,})\x2f(\d{1,})\x2frelated\x2frss$</matching>
+  </ruleset>
+
+
+  <ruleset name="Qingting.FM" sort="fm.qingting">
+    <matching>^http(s)?\x3a\x2f\x2f(papi(\x2dstaging)?|c)\x2eqingting\x2efm\x2fpodcast\x2fchannels\x2f(\d{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f(papi(\x2dstaging)?|c)\x2eqingting\x2efm\x2fpodcast\x2fv1\x2fvchannels\x2f(\d{1,})$</matching>
+  </ruleset>
+
+
+  <ruleset name="RadioTalk.jp" sort="jp.radiotalk">
+    <matching>^http(s)?\x3a\x2f\x2fradiotalk\x2ejp\x2frss\x2f([a-f0-9]{16})$</matching>
+  </ruleset>
+
+  <ruleset name="AmazonAWS.com" sort="com.amazonaws">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e\x5f]{1,})\x2eamazonaws\x2ecom\x2f([a-z0-9\x25\x26\x2b\x2d\x2e\x2f\x3f\x3d\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="SoundOn.FM" sort="fm.soundon">
+    <matching>^http(s)?\x3a\x2f\x2fapi\x2esoundon\x2efm\x2fv2\x2fpodcasts\x2f([a-f0-9\x2d]{36})\x2ffeed\x2exml$</matching>
+    <matching>^http(s)?\x3a\x2f\x2frss\x2esoundon\x2efm\x2frss\x2ftracks\x2f([a-f0-9\x2d]{36})\x2ffeed\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="DjPod.com" sort="com.djpod">
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2edjpod\x2ecom\x2f([a-z0-9\x2d\x2e\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="PodServe.FM" sort="fm.podserve">
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2epodserve\x2efm\x2fseries\x2frss\x2f(\d{1,})\x2f([a-z0-9\x2d]{1,})\x2erss$</matching>
+  </ruleset>
+
+  <ruleset name="Podty.ME" sort="me.podty">
+    <matching>^http(s)?\x3a\x2f\x2fapi\x2epodty\x2eme\x2fapi\x2fv1\x2fshare\x2fcast\x2f([a-f0-9]{64})\x2f(\d{6})$</matching>
+  </ruleset>
+
+  <ruleset name="Globo.com" sort="com.globo">
+    <matching>^http(s)?\x3a\x2f\x2faudio\x2egloboradio\x2eglobo\x2ecom\x2fpodcast\x2ffeed\x2f(\d{1,})\x2f([a-z0-9\x2d]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="MegaFono.Host" sort="host.megafono">
+    <matching>^http(s)?\x3a\x2f\x2ffeed\x2emegafono\x2ehost\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="StreamGuys1.com" sort="com.streamguys1">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2estreamguys1\x2ecom\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2exml$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2estreamguys1\x2ecom\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x3fformat\x3drss</matching>
+  </ruleset>
+
+  <ruleset name="RTVS.sk" sort="sk.rtvs">
+    <matching>^http(s)?\x3a\x2f\x2fapi\x2ertvs\x2esk\x2fxml\x2f(apple)?(podcast|radio)\x5f(tv)?archive\x2exml\x3fseries\x3d(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="BaladoQuebec.ca" sort="ca.baladoquebec">
+    <matching>^http(s)?\x3a\x2f\x2fbaladoquebec\x2eca\x2f(.+?)\x2frss$</matching>
+  </ruleset>
+
+
+
 
 </rulesets>
