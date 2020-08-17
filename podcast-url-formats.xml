@@ -1,9 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <!-- Thes regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others against a few hundreds. -->
-<!-- Author: Christopher Isene<christopher.isene@gmail.com> -->
+<!-- Author: Christopher Isene<christopher.isene@gmail.com>-->
 <!-- Revision: 2020-08-17 14:58:40 -->
 <rulesets>
-
   <ruleset name="Anchor.fm" sort="fm.anchor">
     <matching>^http(s)?\x3a\x2f\x2fanchor\x2efm\x2fs\x2f([0-9a-f]{1,})\x2fpodcast\x2frss$</matching>
   </ruleset>
@@ -585,7 +584,6 @@
     <matching>^http(s)?\x3a\x2f\x2ffeeds\x2esounder\x2efm\x2f(\d{1,})\x2frss\x2exml$</matching>
   </ruleset>
 
-
   <ruleset name="PineCast.com" sort="com.pinecast">
     <matching>^http(s)?\x3a\x2f\x2fpinecast\x2ecom\x2ffeed\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
@@ -620,12 +618,10 @@
     <matching>^http(s)?\x3a\x2f\x2fhuffduffer\x2ecom\x2f([a-z0-9\x2d]{1,})\x2f(\d{1,})\x2frelated\x2frss$</matching>
   </ruleset>
 
-
   <ruleset name="Qingting.FM" sort="fm.qingting">
     <matching>^http(s)?\x3a\x2f\x2f(papi(\x2dstaging)?|c)\x2eqingting\x2efm\x2fpodcast\x2fchannels\x2f(\d{1,})$</matching>
     <matching>^http(s)?\x3a\x2f\x2f(papi(\x2dstaging)?|c)\x2eqingting\x2efm\x2fpodcast\x2fv1\x2fvchannels\x2f(\d{1,})$</matching>
   </ruleset>
-
 
   <ruleset name="RadioTalk.jp" sort="jp.radiotalk">
     <matching>^http(s)?\x3a\x2f\x2fradiotalk\x2ejp\x2frss\x2f([a-f0-9]{16})$</matching>
@@ -673,6 +669,52 @@
     <matching>^http(s)?\x3a\x2f\x2fbaladoquebec\x2eca\x2f(.+?)\x2frss$</matching>
   </ruleset>
 
+  <ruleset name="ZQWQZ.org" sort="org.zqwqz">
+    <matching>^http(s)?\x3a\x2f\x2fzqwqz\x2eorg\x2fatom\x2fliste\x2f([a-z0-9\x2d\x5f]{1,})\x2erss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fzqwqz\x2eorg\x2fatom\x2fplaylist\x2f(\d{1,})\x2erss$</matching>
+  </ruleset>
+
+  <ruleset name="PodCastics.com" sort="com.podcastics">
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2epodcastics\x2ecom\x2fpodcastics\x2fpodcasts\x2frss\x2f(\d{1,})\x5f([a-f0-9]{32})\x2erss$</matching>
+  </ruleset>
+
+  <ruleset name="LaunchpadDM.com" sort="com.launchpaddm">
+    <matching>^http(s)?\x3a\x2f\x2f(www\x2e)?launchpaddm\x2ecom\x2ffeed\x2f([a-z0-9\x25\x2d\x2f\x5f]{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f(www\x2e)?launchpaddm\x2ecom\x2fpodcast\x3fcategoryID2\x3d(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="ArteRadio.com" sort="com.arteradio">
+    <matching>^http(s)?\x3a\x2f\x2faudioblog\x2earteradio\x2ecom\x2fblog\x2f(\d{1,})\x2frss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fback\x2daudioblog\x2earteradio\x2ecom\x2fblog\x2f(\d{1,})\x2frss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2earteradio\x2ecom\x2fxml\x5f(flux|sound\x5femission|sound\x5fserie)\x3f(fluxname|emissionname|seriename)\x3d([a-z0-9\x21-\x2f\x3d]{1,})</matching>
+  </ruleset>
+
+  <ruleset name="Backtracks.FM" sort="fm.backtracks">
+    <matching>^http(s)?\x3a\x2f\x2fbacktracks\x2efm\x2ffeed\x2f([a-f0-9]{16})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ebacktracks\x2efm\x2ffeeds\x2f([a-z0-9\x2d\x5f]{1,})\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="HubbardPodcasts.com" sort="com.hubbardpodcasts">
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ehubbardpodcasts\x2ecom\x2f([a-z0-9\x2d]{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ehubbardpodcasts\x2ecom\x2f([a-z0-9\x2d]{1,})\x2fpodcast\x2f([a-z0-9\x2d]{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2ffeeds\x2ehubbardpodcasts\x2ecom\x2f([a-z0-9\x2d]{1,})\x2f([a-z0-9\x2d\x2f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Substack.com" sort="com.substack">
+    <matching>^http(s)?\x3a\x2f\x2fapi\x2esubstack\x2ecom\x2ffeed\x2fpodcast\x2f(\d{1,})\x2erss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fapi\x2esubstack\x2ecom\x2ffeed\x2fpodcast\x2f(\d{1,})\x2fprivate\x2f([a-f0-9\x2d]{36})\x2erss$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d]{1,})\x2esubstack\x2ecom\x2ffeed$</matching>
+  </ruleset>
+
+  <ruleset name="Shenoto.com" sort="com.shenoto">
+    <matching>^http(s)?\x3a\x2f\x2fshenoto\x2ecom\x2ffeed\x2f([a-z0-9\x2d\x2e\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="KP.ru" sort="ru.kp">
+    <matching>^http(s)?\x3a\x2f\x2f(www(\x2e([a-z]{1,}))?|msk)?\x2ekp\x2eru\x2fradio\x2frss\x2f\x3fprogram\x5fid\x3d(\d{1,})(\x26type\x3daudio)?$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2ekp\x2eru\x2fradio\x2frss\x2f([a-z0-9]{1,})\x2f([a-z0-9]{1,})\x2exml$</matching>
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2ekp\x2eru\x2fradio\x2frss\x2f\x3fsupersection\x5fid\x3d(\d{1,})$</matching>
+  </ruleset>
 
 
 
