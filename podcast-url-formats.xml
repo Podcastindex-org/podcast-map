@@ -2,7 +2,7 @@
 <!-- These regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others against a few hundreds. -->
 <!-- All rules/patterns has been tested against AT LEAST 50 samples to go on this list -->
 <!-- Author: Christopher Isene<christopher.isene@gmail.com>-->
-<!-- Revision: 2020-09-13 16:53:39 -->
+<!-- Revision: 2020-09-13 17:16:57 -->
 <rulesets>
   <ruleset name="Anchor" sort="fm.anchor">
     <matching>^http(s)?\x3a\x2f\x2fanchor\x2efm\x2fs\x2f([0-9a-f]{1,})\x2fpodcast\x2frss$</matching>
@@ -1774,5 +1774,47 @@
   <ruleset name="RBB-Online" sort="de.rbb-online">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?rbb\x2donline\x2ede\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})\x2ffeed\x3dpodcast\x2exml$</matching>
   </ruleset>
+
+  <ruleset name="MyRadio" sort="hk.myradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?myradio\x2ehk\x2f\x3f([a-z0-9\x26\x2d\x2f\x3b\x3d]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="WGCR" sort="net.wgcr">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?wgcr\x2enet\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="RMFClassic" sort="pl.rmfclassic">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?rmfclassic\x2epl\x2f([a-z0-9\x2f]{1,})?podcasty\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="RSSHub" sort="app.rsshub">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?rsshub\x2eapp\x2f([a-z\x2f]{1,})\x2f(\d{1,})([a-z\x2e\x2f]{1,})?$</matching>
+  </ruleset>
+
+  <ruleset name="AmericasWebRaio" sort="com.americaswebradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?americaswebradio\x2ecom\x2fpodcasts\x2f([a-z0-9]{1,})\x2exml(.+?)?$</matching>
+  </ruleset>
+
+  <ruleset name="MeldingCloud" sort="com.meldingcloud">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?meldingcloud\x2ecom\x2frss\x2f([a-z]{1,})\x2f(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="NerdyLegion" sort="com.nerdylegion">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?nerdylegion\x2ecom\x2f([a-z0-9\x2e\x2f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="SmithersRadio" sort="com.smithersradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?smithersradio\x2ecom\x2fpath\x2f(\d{1,})\x2frss\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="ThaiPBSPodcast" sort="com.thaipbspodcast">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?thaipbspodcast\x2ecom\x2fprogram\x2drss\x2ephp\x3fid\x3d(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="TwoTrueFreaks" sort="com.twotruefreaks">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?twotruefreaks\x2ecom\x2fmedia\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+
 
 </rulesets>
