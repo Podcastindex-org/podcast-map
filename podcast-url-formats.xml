@@ -2,7 +2,7 @@
 <!-- These regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others against a few hundreds. -->
 <!-- All rules/patterns has been tested against AT LEAST 50 samples to go on this list -->
 <!-- Author: Christopher Isene<christopher.isene@gmail.com>-->
-<!-- Revision: 2020-09-13 14:14:23 -->
+<!-- Revision: 2020-09-13 16:53:39 -->
 <rulesets>
   <ruleset name="Anchor" sort="fm.anchor">
     <matching>^http(s)?\x3a\x2f\x2fanchor\x2efm\x2fs\x2f([0-9a-f]{1,})\x2fpodcast\x2frss$</matching>
@@ -1735,5 +1735,44 @@
     <matching>^http(s)?\x3a\x2f\x2fwww\x2eorm\x2ees\x2frss\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
   </ruleset>
 
+  <ruleset name="AC-Rouen" sort="fr.ac-rouen">
+    <matching>^http(s)?\x3a\x2f\x2fpodcast([a-z\x2d]{1,})?\x2eac\x2drouen\x2efr\x2f([a-z0-9]{1,})\x2ephp\x3f([a-z]{1,})\x3d([a-z0-9\x26\x3d]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Medvan" sort="it.medvan">
+    <matching>^http(s)?\x3a\x2f\x2fwww\x2emedvan\x2eit\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="SpheraHolding" sort="net.spheraholding">
+    <matching>^http(s)?\x3a\x2f\x2fpodcast\x2espheraholding\x2enet\x2fcompany\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="RadioCampus" sort="org.radiocampus">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})radiocampus\x2eorg\x2fpodcasts\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="SondagHelaVeckan" sort="se.sondaghelaveckan">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?sondaghelaveckan\x2ese\x2fpodcast\x2ejsp\x3fo\x3d([a-z0-9\x2c\x2d]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="TWiT Network" sort="tv.twit">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?twit\x2etv\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="BICBP-Radio" sort="com.bicbp-radio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?bicbp\x2dradio\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x3fformat\x3drss$</matching>
+  </ruleset>
+
+  <ruleset name="CoworkLARadio" sort="com.coworklaradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?coworklaradio\x2ecom\x2fws\x2fsaooti\x2fservices\x2frss\x2f([a-z0-9]{1,})\x2f(\d{1,})\x2f(\d{1,})\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="YourstreamLive" sort="com.yourstreamlive">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?yourstreamlive\x2ecom\x2frss\x2f(\d{1,})\x2faudio$</matching>
+  </ruleset>
+
+  <ruleset name="RBB-Online" sort="de.rbb-online">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?rbb\x2donline\x2ede\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})\x2ffeed\x3dpodcast\x2exml$</matching>
+  </ruleset>
 
 </rulesets>
