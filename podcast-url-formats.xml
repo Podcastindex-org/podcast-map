@@ -2,7 +2,7 @@
 <!-- These regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others against a few hundreds. -->
 <!-- All rules/patterns has been tested against AT LEAST 50 samples to go on this list -->
 <!-- Author: Christopher Isene<christopher.isene@gmail.com>-->
-<!-- Revision: 2020-09-13 18:58:01 -->
+<!-- Revision: 2020-09-16 09:00:49 -->
 <rulesets>
   <ruleset name="Anchor" sort="fm.anchor">
     <matching>^http(s)?\x3a\x2f\x2fanchor\x2efm\x2fs\x2f([0-9a-f]{1,})\x2fpodcast\x2frss$</matching>
@@ -1930,6 +1930,79 @@
 
   <ruleset name="Emilcar" sort="fm.emilcar">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?emilcar\x2efm\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Capital" sort="it.capital">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?capital\x2eit\x2fcapital\x2fpodcast\x2frss\x2f([a-z0-9\x2d\x5f]{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?capital\x2eit\x2fapi\x2fpub\x2fv(\d{1,})\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2f(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="PRXU" sort="org.prxu">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?prxu\x2eorg\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2drss\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="Alandsradio" sort="ax.alandsradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?alandsradio\x2eax\x2fpodcast\x2frss\x2f(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="SportsNet" sort="ca.sportsnet">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?sportsnet\x2eca\x2fshows\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2fpodcast\x2f$</matching>
+  </ruleset>
+
+  <ruleset name="ComunicacioneStian" sort="com.comunicacionestian">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?comunicacionestian\x2ecom\x2fprogramas\x5fradio\x2f([a-z0-9\x25\x2d\x2e\x2f\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="NetworkCMO" sort="com.networkcmo">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?networkcmo\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2fitunes\x2faudio\x2f$</matching>
+  </ruleset>
+
+  <ruleset name="PodcastPeople" sort="com.podcastpeople">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?podcastpeople\x2ecom\x2frss\x2f([a-z0-9\x2e\x2f\x3d\x3f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="PodMyTube" sort="com.podmytube">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?podmytube\x2ecom\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="RadioMisfits" sort="com.radiomisfits">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?radiomisfits\x2ecom\x2ffeed\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="TheGuardian" sort="com.theguardian">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?theguardian\x2ecom\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2fpodcast\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="UltimateRadioshow" sort="com.ultimateradioshow">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?ultimateradioshow\x2ecom\x2fcategory\x2f([a-z0-9\x2d\x2f\x5f]{1,})\x2ffeed\x2f$</matching>
+  </ruleset>
+
+  <ruleset name="VOAIndonesia" sort="com.voaindonesia">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?voaindonesia\x2ecom\x2fpodcast\x2f\x3fcount\x3d(\d{1,})\x26zoneId\x3d(\d{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Radio CZ" sort="cz.radio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?radio\x2ecz\x2f(rcz\x2drss|feeds\x2frss|special\x2dpodcasts)\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="InfoRadio" sort="de.inforadio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?inforadio\x2ede\x2fpodcast\x2ffeeds\x2f([a-z0-9\x2d\x2e\x2f\x5f]{1,})\x2ffeed\x3dpodcast\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="Shirazsong" sort="in.shirazsong">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?shirazsong\x2ein\x2fcategory\x2f([a-z0-9\x25\x2d]{1,})\x2ffeed\x2f$</matching>
+  </ruleset>
+
+  <ruleset name="Blogmusic" sort="ir.blogmusic">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?blogmusic\x2eir\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2f$</matching>
+  </ruleset>
+
+  <ruleset name="DonLeonardoMariaPompei" sort="it.donleonardomariapompei">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?donleonardomariapompei\x2eit\x2fphocadownload\x2fpodcast\x2f([a-z0-9\x20\x25\x2c\x2d\x2e]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="RTL LU" sort="lu.rtl">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?rtl\x2elu\x2fpodcast\x2ffeed\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
 
 
