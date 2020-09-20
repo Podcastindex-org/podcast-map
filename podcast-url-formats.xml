@@ -2,7 +2,7 @@
 <!-- These regex rules have been tested against what I had at hand, some patterns against 5000+ URLs, others against a few hundreds. -->
 <!-- All rules/patterns has been tested against AT LEAST 50 samples to go on this list -->
 <!-- Author: Christopher Isene<christopher.isene@gmail.com>-->
-<!-- Revision: 2020-09-16 09:00:49 -->
+<!-- Revision: 2020-09-20 14:59:21 -->
 <rulesets>
   <ruleset name="Anchor" sort="fm.anchor">
     <matching>^http(s)?\x3a\x2f\x2fanchor\x2efm\x2fs\x2f([0-9a-f]{1,})\x2fpodcast\x2frss$</matching>
@@ -1470,7 +1470,7 @@
   </ruleset>
 
   <ruleset name="PanoptoHosted" sort="com.panopto">
-    <matching>^http(s)?\x3a\x2f\x2f([a-z]{1,})\x2ehosted\x2epanopto\x2ecom\x2fpanopto\x2fpodcast\x2fpodcast\x2eashx\x3fcourseid\x3d([a-f0-9\x2d]{36})\x26type\x3d([a-z0-9]{1,})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f([a-z]{1,})\x2ehosted\x2epanopto\x2ecom\x2fpanopto\x2fpodcast\x2fpodcast\x2eashx\x3fcourseid\x3d([a-f0-9\x2d]{36})\x26type\x3d([a-z0-9\x23]{1,})$</matching>
   </ruleset>
 
   <ruleset name="3Nom" sort="com.3nom">
@@ -2004,6 +2004,77 @@
   <ruleset name="RTL LU" sort="lu.rtl">
     <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?rtl\x2elu\x2fpodcast\x2ffeed\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
   </ruleset>
+
+  <ruleset name="DJCPods" sort="com.djcpods">
+    <matching>^http(s)?\x3a\x2f\x2fdjcpods\x2ecom\x2ftrn\x2f\x3f([a-z0-9\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="HWDCN" sort="net.hwcdn">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})hwcdn\x2enet\x2f([a-z0-9\x2d\x5f]{1,})\x2fcds\x2f([a-z0-9\x2d\x5f]{1,})\x3fdopvhost\x3d([a-z0-9\x2e]{1,})\x26x\x2dhw\x2dredirect\x3d([a-z0-9\x2e]{1,})\x26doppath\x3d([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="Radio4All" sort="net.radio4all">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?radio4all\x2enet\x2fresponder\x2ephp\x2fpodcast\x2fpodcast\x2exml([a-z0-9\x25\x26\x2b\x2d\x3d\x3f\x5f]{1,})?$</matching>
+  </ruleset>
+
+  <ruleset name="BanjoHangout" sort="org.banjohangout">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?banjohangout\x2eorg\x2frss\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="StrivingForEternity" sort="org.strivingforeternity">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?strivingforeternity\x2eorg\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="CBS RadioNewsFeed" sort="com.cbsradionewsfeed">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?cbsradionewsfeed\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})?rss\x2ephp([a-z0-9\x26\x2d\x3d\x3f\x5f]{1,})?$</matching>
+  </ruleset>
+
+  <ruleset name="FeedWrench" sort="com.feedwrench">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?feedwrench\x2ecom\x2f([a-z0-9\x2d\x5f]{1,})\x2erss$</matching>
+  </ruleset>
+
+  <ruleset name="GithubUserContent" sort="com.githubusercontent">
+    <matching>^http(s)?\x3a\x2f\x2f(raw|gist)\x2egithubusercontent\x2ecom\x2f([a-z0-9\x25\x2d\x2e\x2f\x5f]{1,})(rss|xml)$</matching>
+  </ruleset>
+
+  <ruleset name="LATalkRadio" sort="com.latalkradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?latalkradio\x2ecom\x2fpodcasts\x2f([a-z0-9\x2d\x5f]{1,})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="RapidFeeds" sort="com.rapidfeeds">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?rapidfeeds\x2ecom\x2f(\d{1,})\x2f$</matching>
+  </ruleset>
+
+  <ruleset name="StreamMonkey" sort="com.streammonkey">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?streammonkey\x2ecom\x2fxml\x2fpodcast\x2f([a-z0-9]{8})$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?streammonkey\x2ecom\x2ffeeds\x2f([a-f0-9]{13})\x2fpodcast\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="WABC Radio" sort="com.wabcradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?wabcradio\x2ecom\x2fpodcast\x2f([a-z0-9\x2d\x5f]{1,})\x2ffeed\x2f\x3fpost\x5ftype\x3depisode$</matching>
+  </ruleset>
+
+  <ruleset name="Radio4 DK" sort="dk.radio4">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?radio4\x2edk\x2frss\x2fpodcast\x2f([a-z0-9\x2d\x5f]{1,})\x2erss$</matching>
+  </ruleset>
+
+  <ruleset name="Fans FM" sort="fm.fans">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?fans\x2efm\x2f([a-z0-9\x2d]{1,})\x2exml$</matching>
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2e]{1,})?fans\x2efm\x2ffeed\x2f([a-f0-9\x2d]{32,36})\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="TypLog" sort="io.typlog">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?typlog\x2eio\x2fepisodes\x2ffeed\x2exml$</matching>
+  </ruleset>
+
+  <ruleset name="RadioCafe" sort="jp.radiocafe">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?radiocafe\x2ejp\x2f([0-9\x2f]{1,})?xml\x2ephp\x3f([a-z0-9\x26\x2d\x3d\x5f]{1,})$</matching>
+  </ruleset>
+
+  <ruleset name="WebTalkRadio" sort="net.webtalkradio">
+    <matching>^http(s)?\x3a\x2f\x2f([a-z0-9\x2d\x2e]{1,})?webtalkradio\x2enet\x2finternet\x2dtalk\x2dradio\x2fcategory\x2fpodcasts\x2f([a-z0-9\x2d\x2f\x5f]{1,})$</matching>
+  </ruleset>
+
 
 
 </rulesets>
